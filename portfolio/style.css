@@ -10,10 +10,25 @@
   --bg-light: #1a1a1a;
   --text-primary: #f0f0f0;
   --text-secondary: #a0a0a0;
-  --neon-cyan: #00ffff; /* Cor do neon */
-  --border-radius-sm: 8px;
+  --neon-cyan: #4e4e4e; /* Cor do neon */
+  --border-radius-sm: 5px;
   --border-radius-md: 12px;
   --transition-speed: 0.3s;
+}
+
+/* =================================
+   ESTILOS GERAIS E CURSOR PERSONALIZADO
+   ================================= */
+body{
+  cursor: url('assets/Cursor_ZeroBug.svg'), auto;
+}
+
+a, button, .btn {
+  cursor: url('assets/Cursor_ZeroBug.svg'), pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6, input, textarea {
+  cursor: text;
 }
 
 * {
@@ -166,10 +181,10 @@ h2 {
 
 /* EFEITO NEON PARA O TEXTO DESTACADO NOS TÍTULOS */
 .section h2 .highlight {
-  color: #ff0000;
+  color: #d50101;
   text-shadow: 
     0 0 5px #ff0000,
-    0 0 10px #fff,
+    0 0 10px #ffffff,
     0 0 20px var(--neon-cyan),
     0 0 35px var(--neon-cyan),
     0 0 50px var(--neon-cyan);
